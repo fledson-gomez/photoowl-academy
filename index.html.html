@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoowl Academy | Escola de Audiovisual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Paleta Mostarda Personalizada */
+        :root {
+            --mostarda: #b48608;
+            --mostarda-escuro: #8e6a06;
+            --preto: #000000;
+            --cinza-escuro: #121212;
+        }
+        
+        body { background-color: var(--preto); color: white; }
+        
+        .bg-mostarda { background-color: var(--mostarda); }
+        .bg-mostarda:hover { background-color: var(--mostarda-escuro); }
+        .text-mostarda { color: var(--mostarda); }
+        .border-mostarda { border-color: var(--mostarda); }
+
+        .gradient-hero {
+            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 100%),
+                        url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .course-card {
+            background-color: var(--cinza-escuro);
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+        .course-card:hover {
+            border-color: var(--mostarda);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-black/90 border-b border-white/10 p-5 sticky top-0 z-50 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-tighter flex items-center gap-2">
+                <i class="fas fa-owl text-mostarda"></i>
+                PHOTOOWL <span class="text-mostarda">ACADEMY</span>
+            </h1>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#cursos" class="hover:text-mostarda transition">Cursos</a>
+                <a href="#sobre" class="hover:text-mostarda transition">Sobre</a>
+                <a href="https://wa.me/SEUNUMERO" class="bg-white text-black px-4 py-2 rounded-md hover:bg-mostarda hover:text-white transition">Suporte</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-hero h-[80vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-mostarda font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Domine a arte da imagem</span>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Sua jornada <span class="text-mostarda">audiovisual</span> começa aqui.</h2>
+            <p class="text-xl md:text-2xl mb-10 text-gray-400">Do celular ao drone. Aprenda com especialistas e transforme sua paixão em profissão.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#cursos" class="bg-mostarda text-black font-bold py-4 px-10 rounded-full text-lg transition-all shadow-lg shadow-mostarda/20">Ver Treinamentos</a>
+                <a href="#sobre" class="border border-white/20 hover:bg-white/10 text-white font-bold py-4 px-10 rounded-full text-lg transition-all">Saiba Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Cursos -->
+    <section id="cursos" class="py-24 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">Nossas Formações Profissionais</h3>
+                <div class="w-24 h-1 bg-mostarda mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Curso 1: Fotografia -->
+                <div class="rounded-2xl overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1542038783-0ad342421df2?auto=format&fit=crop&w=800&q=80" alt="Fotografia" class="w-full h-56 object-cover opacity-80">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3">Master em Fotografia</h4>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">Aprenda a dominar o modo manual, iluminação criativa e edição avançada.</p>
+                        <a href="https://pay.kiwify.com.br/jQpaatk" class="block text-center bg-mostarda text-black font-bold py-3 rounded-lg hover:scale-105 transition transform">Garantir Minha Vaga</a>
+                    </div>
+                </div>
+
+                <!-- Curso 2: Filmagem -->
+                <div class="rounded-2xl overflow-hidden course-card border-mostarda">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" alt="Filmagem" class="w-full h-56 object-cover opacity-80">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3">Filmmaker Pro</h4>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">Crie vídeos cinematográficos, aprenda movimentos de câmera e storytelling.</p>
+                        <a href="LINK_KIWIFY_AQUI" class="block text-center bg-mostarda text-black font-bold py-3 rounded-lg hover:scale-105 transition transform">Garantir Minha Vaga</a>
+                    </div>
+                </div>
+
+                <!-- Curso 3: Drone -->
+                <div class="rounded-2xl overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1527977966376-1c8418f9f108?auto=format&fit=crop&w=800&q=80" alt="Drone" class="w-full h-56 object-cover opacity-80">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3">Expert em Drones</h4>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">Imagens aéreas de tirar o fôlego, segurança de voo e legislação.</p>
+                        <a href="https://pay.kiwify.com.br/KyVTr3R" class="block text-center bg-mostarda text-black font-bold py-3 rounded-lg hover:scale-105 transition transform">Garantir Minha Vaga</a>
+                    </div>
+                </div>
+
+                <!-- Curso 4: Audiovisual -->
+                <div class="rounded-2xl overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1536243298747-ea8874136d64?auto=format&fit=crop&w=800&q=80" alt="Audiovisual" class="w-full h-56 object-cover opacity-80">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3">Formação Audiovisual</h4>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">O guia completo: da captação à pós-produção Edição básica com métodos avançados.</p>
+                        <a href="https://pay.kiwify.com.br/HZ3JeZi" class="block text-center bg-mostarda text-black font-bold py-3 rounded-lg hover:scale-105 transition transform">Garantir Minha Vaga</a>
+                    </div>
+                </div>
+
+                <!-- Curso 5: Fotografia com Celular -->
+                <div class="rounded-2xl overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?auto=format&fit=crop&w=800&q=80" alt="Celular" class="w-full h-56 object-cover opacity-80">
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-3">Mobile Photo Creator</h4>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">Transforme seu smartphone em uma máquina de vendas e arte visual.</p>
+                        <a href="https://pay.kiwify.com.br/08hEJtU" class="block text-center bg-mostarda text-black font-bold py-3 rounded-lg hover:scale-105 transition transform">Garantir Minha Vaga</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="sobre" class="bg-zinc-950 border-t border-white/5 py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-black mb-6 flex justify-center items-center gap-2">
+                <i class="fas fa-owl text-mostarda"></i> PHOTOOWL ACADEMY
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-8">
+                Somos uma escola dedicada a formar a próxima geração de criadores visuais. Nosso conteúdo é focado na prática, com fluxos de trabalho reais de mercado.
+            </p>
+            <div class="flex justify-center space-x-6 mb-10">
+                 <a href="https://www.instagram.com/photoowl.audiovsual" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/message/GDYGSVR32TGNO1" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+             </div>
+            <p class="text-xs text-zinc-600 uppercase tracking-widest">
+                © 2024 Photoowl Academy - Pagamento processado com segurança via Kiwify
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
